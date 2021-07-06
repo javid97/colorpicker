@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Picker</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <div class="radio-btn-group">
+            <input type="radio" name="picker-converter" id="color-picker"checked />
+            <label for="color-picker">Color Picker</label>
+            <input type="radio" name="picker-converter" id="converter" />
+            <label for="converter">Converter</label>
+        </div> -->
+        <div class="container">
+            <div class="pick-color">
+                <canvas id="canvas" height='250px' width='250px'></canvas>
+                <button class="pick-from-palette-btn">Pick color from palette</button>
+                <label for="file" class="labelForFile">Pick color from image</label>
+                <input type="file" accept='jpeg, png, jpg' id="file" />
+            </div>
+            <canvas id="canvas3"></canvas>
+            <div class="color-history-pannel">
+                <canvas id="canvas2"></canvas>
+                <h1>Color History &uparrow;</h1>
+            </div>
+        </div>
+        <div class="color-values-container">
+            <button class="color-value rgb">rgb(221, 221, 221)</button>
+            <button class="color-value hsl">hsl(0, 0%, 87%)</button>
+            <button class="color-value hex">#dddddd</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
